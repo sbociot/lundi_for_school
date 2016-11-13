@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>AirISI</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="style/main.css">
+  	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
+    <!--[if lte IE 6]>
+    <script>alert('lte stands for less than or equal to')</script>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script>alert('lt stands for less than')</script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+    <script>alert('gte stands for greater than or equal to')</script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav id="header_nav">
+		<ul>
+			<li><a href="index.html">Acceuil</a></li>
+			<li><a href="reservation.html">Reservation</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			 <li class="dropdown">
+    <a href="catalogue.html" class="dropbtn">Catalogue</a>
+    <div class="dropdown-content">
+      <a href="catalogue.html">Paris</a>
+      <a href="catalogue.html">Londre</a>
+      <a href="catalogue.html">Caraïbe</a>
+    </div>
+  </li>
+  <li><a href="reservation.html"><i class="fa fa-user" style="font-size:25px;color:#0071b3"></i></a></li>
+			
+		</ul>
+	</nav>
+	<div class="header_image">
+		<img src="images/summer.jpg" alt="summer">
+	</div>
+	<div class="description">
+		<h1>Plus de vols pour ensoleiller votre hiver !</h1>
+		<a href="reservation.html">Voir nos nouvautés</a>
+	</div>
+	  <h2>Réservation</h2>
+  
+  <form>
+    	<div class="leftcontact">
+			      <div class="form-group">
+			        <p>Prenom</p>
+			        <span class="icon-case"><i class="fa fa-male"></i></span>
+				        <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+                <div class="validation"></div>
+       </div> 
+
+            <div class="form-group">
+            <p>Nom</p>
+            <span class="icon-case"><i class="fa fa-user"></i></span>
+				<input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>E-mail</p>	
+			<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
+                <div class="validation"></div>
+			</div>	
+			<div class="form-group">
+			<p>Address</p>
+			<span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+				<input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+
+			<div class="form-group">
+			<p>Code Postal</p>
+			<span class="icon-case"><i class="fa fa-map-marker"></i></span>
+				<input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+	</div>
+
+	<div class="rightcontact">		
+			<div class="form-group">
+			<p>Phone number</p>	
+			<span class="icon-case"><i class="fa fa-phone"></i></span>
+				<input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+                <div class="validation"></div>
+			</div>
+			<div class="form-group">
+			<p>Forfaits choisi</p>	
+			<span class="icon-case"><i class="fa fa-angle-down" style="font-size:24px"></i></span>
+                <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+                <div class="validation"></div>
+			</div>
+		
+			<div class="form-group">
+			<p>Message</p>
+			<span class="icon-case"><i class="fa fa-comments-o"></i></span>
+                <textarea name="message" rows="14" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."></textarea>
+                <div class="validation"></div>
+			</div>
+			<div class="form-group">
+		     <input type="radio" name="pay" value=""><i class="fa fa-cc-paypal" style="font-size:36px"></i>
+		     <input type="radio"  name="pay" value=""><i class="fa fa-cc-discover" style="font-size:36px;"></i>
+		     <input type="radio"  name="pay" value=""><i class="fa fa-cc-visa" style="font-size:36px"></i>
+	</div>	
+	</div>
+
+<button type="submit" class="bouton-contact">Send</button>
+	
+</form>	
+<footer>
+	<ul>
+		<li><a href="#"><img src="55px/facebook.png" alt="facebook"></a></li>
+		<li><a href="#"><img src="55px/instagram.png" alt="instagram"></a></li>
+		<li><a href="#"><img src="55px/twitter.png" alt="twitter"></a></li>
+		
+	</ul>
+	<h6>&copy; AirISI 2016 inc.</h6>
+</footer>
+
+</body>
+</html>
